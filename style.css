@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: passe;
+    src: url(Heading-Now-Trial-58-Heavy/HeadingNowTrial-58Heavy.ttf)
+ }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: #282828;
+}
+.cabecalho{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(139, 87, 222);
+    padding: 15px 0;
+    position: relative;
+    border-top: 2px solid rgb(38, 0, 63);
+    border-bottom: 2px solid rgb(38, 0, 63);
+    transform: rotate(358deg);
+    
+    
+}
+.titulo-cabecalho{
+    display: inline;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    
+    
+}
+.titulos{
+    width: 100vw;
+    animation: passar 10s linear infinite;
+    display: flex;
+    gap: 100px;
+    font-family: "inter tight",arial;
+}
+.principal{
+    background-color: #282828;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao{
+    background-color: rgb(241, 121, 1);
+    border-radius: 15px;
+    width: 100%;
+    padding: 500px 20px 20px 20px;
+}
+.titulo-apresetacao{
+    font-family: "passe";
+    font-size: 3em;
+
+}
+.texto-apresentacao{
+    font-family: "inter tight",arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    letter-spacing: -0.7px;
+}
+@keyframes passar{
+    0% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
