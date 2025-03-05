@@ -12,6 +12,20 @@ body{
     background-color: #282828;
     overflow-x: hidden;
 }
+.cartao{
+    position: absolute;
+    top: 189px;
+    left: 30px;
+    animation: balanco 5s ease-in-out infinite;
+  transform-origin: center top;
+}
+.cordao{
+    position: absolute;
+    z-index: 2;
+    left: 110px;
+    top: -50px;
+    transform: rotate(10deg);
+}
 .cabecalho{
     width: 100%;
     overflow: hidden;
@@ -49,7 +63,7 @@ body{
     background-color: rgb(241, 121, 1);
     border-radius: 15px;
     width: 100%;
-    padding: 300px 20px 20px 20px;
+    padding: 500px 20px 20px 20px;
 }
 .box-align{
     display: flex;
@@ -160,6 +174,13 @@ body{
     z-index: -1;
     margin-top: -15px;
 }
+@keyframes balanco {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
 @keyframes fadeimg{
     0%{
        transform: rotate(0deg);
